@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		173BE9E12F3A079E004EDBCE /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 173BE9E02F3A079E004EDBCE /* GoogleMobileAds */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		17D0B65C2F39D5880080959F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		17D0B6652F39D5880080959F /* BlurMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		173BE9DF2F3A063F004EDBCE /* Exceptions for "BlurMate" folder in "BlurMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 17D0B64B2F39D5870080959F /* BlurMate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		17D0B64E2F39D5870080959F /* BlurMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				173BE9DF2F3A063F004EDBCE /* Exceptions for "BlurMate" folder in "BlurMate" target */,
+			);
 			path = BlurMate;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173BE9E12F3A079E004EDBCE /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = BlurMate;
 			packageProductDependencies = (
+				173BE9E02F3A079E004EDBCE /* GoogleMobileAds */,
 			);
 			productName = BlurMate;
 			productReference = 17D0B64C2F39D5870080959F /* BlurMate.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 17D0B6432F39D5870080959F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				173BE9DD2F3A05FD004EDBCE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 17D0B64D2F39D5870080959F /* Products */;
 			projectDirPath = "";
@@ -400,6 +422,8 @@
 				DEVELOPMENT_TEAM = 6RBTM76JWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlurMate/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "블러 처리된 사진을 저장하기 위해 사진 라이브러리 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +452,8 @@
 				DEVELOPMENT_TEAM = 6RBTM76JWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlurMate/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "블러 처리된 사진을 저장하기 위해 사진 라이브러리 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		173BE9DD2F3A05FD004EDBCE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		173BE9E02F3A079E004EDBCE /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 173BE9DD2F3A05FD004EDBCE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17D0B6442F39D5870080959F /* Project object */;
 }
